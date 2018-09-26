@@ -201,9 +201,11 @@ class PreviewFragment : BaseFragment(), View.OnClickListener, Animation.Animatio
                 val num: Int
                 if (positionOffsetPixels < screenWidth / 2) {
                     mediaEntity = allMediaList[position]
+                    if（tv_check!=null）
                     tv_check.isSelected = isSelected(mediaEntity)
                 } else {
                     mediaEntity = allMediaList[position + 1]
+                     if（tv_check!=null）
                     tv_check.isSelected = isSelected(mediaEntity)
                 }
             }
